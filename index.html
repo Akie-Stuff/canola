@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
-  <title>🌸 Catatan Manis untuk ChaCha 💜</title>
+  <title>🌸 Catatan Manis untuk BabyCalm 💗</title>
   <style>
     body {
       margin: 0;
       font-family: 'Comic Sans MS', cursive, sans-serif;
-      background: linear-gradient(135deg, #b388eb, #fbc2eb);
-      color: #4b0082;
+      background: linear-gradient(135deg, #ff9a9e, #fecfef);
+      color: #c2185b;
       text-align: center;
       min-height: 100vh;
       display: flex;
@@ -20,22 +21,23 @@
     h1 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
-      color: #6a0dad;
+      color: #e91e63;
       text-shadow: 2px 2px 5px #fff;
     }
 
     #quoteBox {
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.85);
       border-radius: 25px;
       padding: 20px 30px;
       font-size: 1.3rem;
       max-width: 500px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 20px rgba(255, 105, 180, 0.3);
       margin: 20px auto;
       position: relative;
     }
 
-    #quoteBox::before, #quoteBox::after {
+    #quoteBox::before,
+    #quoteBox::after {
       content: "🌸";
       position: absolute;
       font-size: 1.8rem;
@@ -45,25 +47,26 @@
       top: -15px;
       left: -15px;
     }
+
     #quoteBox::after {
       bottom: -15px;
       right: -15px;
     }
 
     button {
-      background: #c77dff;
+      background: #ff6fa5;
       border: none;
       padding: 12px 25px;
       font-size: 1rem;
       border-radius: 25px;
       color: white;
       cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
       transition: 0.2s;
     }
 
     button:hover {
-      background: #9d4edd;
+      background: #ff3d8b;
       transform: scale(1.05);
     }
 
@@ -85,18 +88,22 @@
     }
 
     @keyframes fall {
-      0% { transform: translateY(-10%); }
-      100% { transform: translateY(110vh); }
+      0% {
+        transform: translateY(-10%);
+      }
+
+      100% {
+        transform: translateY(110vh);
+      }
     }
 
-    /* Popup */
     #popup {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(75, 0, 130, 0.8);
+      background: rgba(255, 105, 180, 0.85);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -104,36 +111,37 @@
     }
 
     #popupContent {
-      background: #fff0f6;
+      background: #ffe4f1;
       padding: 30px;
       border-radius: 20px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      box-shadow: 0 5px 20px rgba(255, 105, 180, 0.4);
       text-align: center;
       max-width: 400px;
     }
 
     #popupContent h2 {
-      color: #6a0dad;
+      color: #e91e63;
       margin-bottom: 15px;
     }
 
     #popupContent p {
       margin-bottom: 20px;
-      color: #4b0082;
+      color: #c2185b;
     }
   </style>
 </head>
+
 <body>
-  <!-- Popup -->
+
   <div id="popup">
     <div id="popupContent">
-      <h2>💜 Awoo ChaCha Cintaku! 💜</h2>
+      <h2>💗 Awoo ka babycalm! 💗</h2>
       <p>🌸 Selamat datang di halaman kecil penuh kata manis untukmu ✨</p>
       <button onclick="closePopup()">Masuk 🌷</button>
     </div>
   </div>
 
-  <h1>🌸 Catatan Manis untuk ChaCha Wanita Kuat Yang Dipaksa Rapuh 💜</h1>
+  <h1>🌸 Catatan kecil untuk dela, gadis kuat yang sering menyembunyikan rapuhnya 💗</h1>
   <div id="quoteBox">Klik tombol di bawah untuk membuat duniamu!</div>
   <button onclick="generateQuote()">🌷 Bunga Untukku 🌷</button>
 
@@ -141,22 +149,31 @@
 
   <script>
     const quotes = [
-      "🌸💜 Jangan menyerah, bunga pun butuh hujan untuk tumbuh. 🌧️✨",
-      "🥺💜 Kamu lebih kuat dari yang kamu pikirkan. 🌟🌸",
-      "💌✨ Hidup itu kadang berat, tapi kamu nggak sendirian. 🌸🤍",
-      "🌷💜 Senyum kecilmu bisa jadi cahaya untuk orang lain. 🌞✨",
-      "🌸🦋 Luka hari ini akan jadi pelajaran indah besok. 💜📖",
-      "💜🌙 Bahkan malam paling gelap pun akan berakhir dengan fajar. ☀️✨",
-      "🌻💜 Jangan lupakan betapa berharganya dirimu. 🌸🥺",
-      "🍀💜 Kamu pantas bahagia, jangan ragu untuk meraihnya. 🌟✨",
-      "🌸✨ Istirahat juga bagian dari berjuang, jangan lupa ya. 💜😌",
-      "💜🌸 Kamu adalah karya seni yang sedang berkembang. 🎨✨",
-      "🌹💜 Sesakit apapun, hati bisa sembuh perlahan. ⏳🌸",
-      "🌸💜 Jangan bandingkan dirimu dengan orang lain, kamu unik. 🌟🦋",
-      "🌙💜 Harapan selalu ada, meski samar. 🌌🌸",
-      "💜🌸 Hidup itu indah dengan segala luka dan tawa. 🌈✨",
-      "🥺💜 Kamu dicintai lebih dari yang kamu sadari. 🌸💌",
-      "🌷💜 Hujan pun tak abadi, begitu juga kesedihanmu. 🌧️✨"
+      "🌸💗 dela, dunia kadang keras, tapi hatimu lebih kuat dari yang kamu kira 🌟",
+      "🥺💗 babycalm, kamu nggak harus selalu kuat, kadang istirahat juga bagian dari bertahan 🌙",
+      "🌷💗 dela, bahkan bunga paling indah pun pernah melewati hujan yang panjang 🌧️",
+      "💌💗 babycalm, kalau hari ini terasa berat, ingat kamu sudah sejauh ini 🌸",
+      "🌸✨ dela, luka hari ini tidak akan menghapus indahnya dirimu 🌷",
+      "💗🌙 babycalm, malam mungkin gelap, tapi kamu selalu punya cahaya sendiri ✨",
+      "🌻💗 dela, kamu lebih berharga dari semua keraguan yang pernah kamu dengar 🌸",
+      "🍀💗 babycalm, pelan saja, hidup bukan lomba lari 🌿",
+      "🌸💗 dela, kadang dunia memaksa kamu rapuh, tapi hatimu tetap belajar kuat 🌷",
+      "🌷💗 babycalm, senyummu kecil, tapi dampaknya besar untuk orang lain 🌞",
+      "🌙💗 dela, kalau kamu lelah, langit juga mengerti untuk menurunkan malam 🌌",
+      "🌸💗 babycalm, tidak apa-apa menangis, bunga pun butuh hujan 🌧️",
+      "💗🌷 dela, kamu tidak gagal, kamu hanya sedang tumbuh 🌱",
+      "🌸✨ babycalm, bahkan hari yang buruk tidak bisa menghapus nilai dirimu 🌼",
+      "🥺💗 dela, kamu layak dicintai tanpa harus menjadi sempurna 🌸",
+      "💌💗 babycalm, seseorang di dunia ini pasti bersyukur kamu ada 🌷",
+      "🌻💗 dela, tetaplah lembut meskipun dunia kadang kasar 🌸",
+      "🌙💗 babycalm, pelan-pelan saja, bintang pun muncul satu per satu ✨",
+      "🌸💗 dela, kekuatanmu sering muncul justru saat kamu merasa paling rapuh 🌷",
+      "🍀💗 babycalm, masa depanmu belum selesai ditulis 🌿",
+      "🌷💗 dela, kamu bukan sekadar bertahan, kamu sedang berkembang 🌸",
+      "💗🌙 babycalm, bahkan badai pun akhirnya berhenti 🌧️",
+      "🌸💗 dela, jangan terlalu keras pada dirimu sendiri 🌼",
+      "🌷💗 babycalm, dunia mungkin bising, tapi hatimu tetap punya ketenangan 🌙",
+      "🌻💗 dela, kamu bukan sendirian dalam perjalanan ini 🌸"
     ];
 
     function generateQuote() {
@@ -164,12 +181,10 @@
       document.getElementById("quoteBox").innerText = quotes[randomIndex];
     }
 
-    // popup control
     function closePopup() {
       document.getElementById("popup").style.display = "none";
     }
 
-    // bikin bunga jatuh random
     function createFlower() {
       const flower = document.createElement("div");
       flower.className = "flower";
@@ -186,4 +201,5 @@
     setInterval(createFlower, 800);
   </script>
 </body>
+
 </html>
